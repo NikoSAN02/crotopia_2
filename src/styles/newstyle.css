@@ -1,0 +1,254 @@
+/* ABOVE MINT CARDS */
+.gg{
+    visibility: hidden;
+  }
+  
+  .shard {
+    background: #000;
+    border-radius: 1.25rem;
+    color: #fff;
+    filter: drop-shadow(5px 5px 5px rgb(118, 232, 240));
+    flex-shrink: 0;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    height: 70vmin;
+    max-height: 20px;
+    padding: 2.5rem;
+    position: absolute;
+    transition: transform 0.25s ease-out;
+    min-height: 300px;
+  }
+
+  .card__content{
+    margin-top: -25px;
+    margin-left: -20px;
+    justify-content: left;
+  }
+
+  .card:nth-of-type(1) {
+    transform: translate(-40%, 0) rotate(-15deg);
+  }
+  .card__footer {
+    align-items: center;
+    bottom: 15px;
+    display: flex;
+    font-size: 0.75rem;
+    left: 2.5rem;
+    position: absolute;
+    right: 2.5rem;
+  }
+  .card__footer img {
+    height: 2rem;
+    margin-right: 6px;
+    width: 2rem;
+  }
+  .card--answer {
+    color: #000;
+    background: rgb(153, 232, 238);
+  }
+
+  .scene .card--javascript:hover{
+    transform: translate(80%, 0) rotate(55deg) translate(0, 10%);
+    z-index: 2;
+  }
+
+  .scene .card--typescript:hover{
+    transform: translate(80%, 0) rotate(55deg) translate(0, -10%);
+    z-index: 1;
+  }
+  .scene{
+    margin-left: 60px;
+    margin-right: -90px;
+  }
+
+
+.poster{
+  background-color: #000;
+  margin-bottom: 200px;
+
+}
+
+
+/* Footer */
+
+footer{
+  color: #000;
+}
+
+.footerbutt{
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+  /* Glitch On HOVER */
+  
+.foobtu{
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+.foobtu:hover{
+  filter: drop-shadow(5px 5px 10px #7eebf3) ;
+  transition: 0.4s;
+}
+
+/* COMING SOON */
+
+.wrapper {
+  position: relative;
+  perspective: 40em;
+  display: grid;
+  transform-style: preserve-3d;
+}
+
+.pard {
+
+  grid-area: 1 / 1;
+  height: 100px;
+  width: 190px;
+  transform: translateX(10px) rotateY(25deg) rotateX(10deg);
+  background: rgb(118, 232, 240);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 900;
+  backface-visibility: hidden;
+  box-shadow: 0 10px 30px -3px rgba(0,0,0,.1);
+  filter:drop-shadow(5px 5px 5px rgb(117, 187, 219));
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+.pard .enclosed {
+  background: #000;
+  line-height: 1.5;
+  color: rgb(118, 232, 240);
+  padding: 0 5px;
+  transform: translate(-1px, 1px) scale(0.75);
+  transform-origin: right center;
+}
+
+.wrapper:before {
+  --bw: 9px;
+  grid-area: 1 / 1;
+  content: '';
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  margin-top: calc(-1 * var(--bw));
+  margin-left: calc(-1 * var(--bw));
+  background: transparent;
+  transform: translateX(-60px) rotateY(-30deg) rotateX(15deg) scale(1.03);
+  pointer-events: none;
+  border: var(--bw) solid #7eebf3;
+  box-sizing: content-box;
+  filter:drop-shadow(5px 5px 5px rgb(117, 187, 219));
+}
+
+
+.wrapper:hover > div,
+.wrapper:hover:before {
+  transform: none;
+}
+
+
+.wrapper > div,
+.wrapper:before {
+  will-change: transform;
+  transition: .3s transform cubic-bezier(.25,.46,.45,1);
+}
+
+/* SCROLL UPPP */
+
+.ScrollUp{
+  display: flex;
+  justify-content: right;
+  color: #fff ;
+  padding-right: 200px;
+}
+
+
+.text-box {
+  padding-left: 20px;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  transition: all .2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+
+

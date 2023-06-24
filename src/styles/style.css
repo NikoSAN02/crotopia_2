@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titlee{
+filter:drop-shadow(4px 4px 1px rgb(0, 0, 0));
+}
+
+.small_buttons{
+  background-color: #b4adad;
+  border-radius: 20px;
+  border-color: #1edfe9;
+  border-width: 2px;
+  border-style: solid;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+.small_buttons:hover{
+  background-color: #a6dcd6;
+  transition: 1s;
+  box-shadow: #1edfe9 -3px 4px 10px;
+}
+
+.BroTeam{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 80px;
+}
+
+.photu{
+  position: relative;
+}
+
+.section2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.boxy{
+  margin-left: 20px;
+}
+
+.photu .special{
+  display: inline-block;
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  box-shadow: 3px 3px 10px #6ecce9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.photu .special:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #6de9e9;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.photu .special:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.photu .special:after{
+  content: 'MECHABROS';
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(90, 225, 230, 0.05)
+}
+
+.photu .special .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.photu .special:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.photu .special .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.photu .special .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.photu .special:hover .contentBx{
+  height: 200px;
+}
+
+.photu .special .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 20;
+}
+
+
+.photu .special .contentBx .size, .photu .special .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.photu .special:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.photu .special:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.photu .special .contentBx .size h3, .photu .special .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+/* ATTRIBUTES CARDU */
+
+.photu .special .contentBx .size span{
+  width: 46px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.photu .special .contentBx .size span:hover{
+  background: #9bdc28;
+}
+
+.photu .special .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.photu .special .contentBx .color span:nth-child(2){
+  background: #9bdc28;
+}
+
+.photu .special .contentBx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.photu .special .contentBx .color span:nth-child(4){
+  background: #e91e63;
+}
+
+.photu .special .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.photu .special:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+
+
+/* Gallery */
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+
+/* PROFILE PICTURE */
+
+.marqueeTeam{
+display: flex;
+justify-content: center;
+ background-color: #f8f07b;
+ height: 30px;
+ margin-top: 100px; 
+ margin-bottom: 0;
+ color: #000;
+ text-shadow: 2px 2px 12px  rgb(119, 216, 223);
+}
+
+.PP {
+
+  max-height: 800px;
+  min-height: 550px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.PP2 {
+  max-height: 800px;
+  min-height: 550px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 0vw;
+}
+
+.PP3 {
+  max-height: 800px;
+  min-height: 550px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 0vw;
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border:hover {
+  border: 1px solid #fff;
+}
+.frame {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.frame0 {
+  background: url("../assets/images/TeamSeven.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame0:hover {
+  background: url("../assets/images/TeamSeven.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame0:hover h2 {
+  opacity: 1;
+}
+.frame0:hover .fa {
+  opacity: 1;
+}
+.frame1 {
+  background: url("../assets/images/TeamTwo.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame1:hover {
+  background: url("../assets/images/TeamTwo.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame1:hover h2 {
+  opacity: 1;
+}
+.frame1:hover .fa {
+  opacity: 1;
+}
+.frame2 {
+  background: url("../assets/images/TeamThree.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame2:hover {
+  background: url("../assets/images/TeamThree.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame2:hover h2 {
+  opacity: 1;
+}
+.frame2:hover .fa {
+  opacity: 1;
+}
+
+.frame3 {
+  background: url("../assets/images/TeamFour.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame3:hover {
+  background: url("../assets/images/TeamFour.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame3:hover h2 {
+  opacity: 1;
+}
+.frame3:hover .fa {
+  opacity: 1;
+}
+.frame4 {
+  background: url("../assets/images/TeamFive.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame4:hover {
+  background: url("../assets/images/TeamFive.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame4:hover h2 {
+  opacity: 1;
+}
+.frame4:hover .fa {
+  opacity: 1;
+}
+.frame5 {
+  background: url("../assets/images/TeamSix.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame5:hover {
+  background: url("../assets/images/TeamSix.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame5:hover h2 {
+  opacity: 1;
+}
+.frame5:hover .fa {
+  opacity: 1;
+}
+.frame6 {
+  background: url("../assets/images/Wavy.png") center center no-repeat;
+  background-size: 300px;
+}
+.frame6:hover {
+  background: url("../assets/images/Wavy.png") left center no-repeat;
+  background-size: 600px;
+}
+.frame6:hover h2 {
+  opacity: 1;
+}
+.frame6:hover .fa {
+  opacity: 1;
+}
+
+h2 {
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* mintbutton */
+
+.InDe{
+display: flex;
+padding-left: 5px;
+padding-right: 20px;
+}
+
+.MintButton{
+display: flex;
+justify-content: center;
+}
+
+.mintstation{
+
+  padding-top: 15vw;
+  display: inline-block;
+  justify-content: center;
+margin-left: 10px;
+margin-right: 30px;
+border-radius: 20px;
+border: #7eebf3 solid 6px;
+padding-bottom: 15vw;
+
+}
+
+/* Marquee */
+.marquee{
+  margin-top: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #88f3f7;
+  color: #000;
+  text-shadow: 2px 2px 12px  rgb(119, 216, 223);
+  margin-bottom: 50px;
+}
+
+.socials{
+  display: grid;
+  justify-content: top;
+  margin-top: -110px;
+  padding-left: 5px;
+}
+
+.s1{
+display: inline-block;
+padding-top: 10px;
+}
+
+.s2{
+display: inline-block;
+padding-top: 10px;
+}
+
+.s3{
+display: inline-block;
+padding-top: 10px;
+}
+
+.feedback{
+display: flex;
+justify-content: center;
+font-size: 30px;
+
+}
+
+.total_supply{
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+}
+
+.textw{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sale{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
