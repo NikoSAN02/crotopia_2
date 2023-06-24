@@ -1,6 +1,5 @@
 import { Typography} from '@material-ui/core';
 import Button from "@material-ui/core/Button";
-import './styles/stylesM.css';
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "./redux/data/dataActions";
@@ -9,10 +8,6 @@ import { fetchData } from "./redux/data/dataActions";
 
 import diss from './assets/images/diss.png'; 
 import tweet from './assets/images/tweet.png'; 
-import insta from './assets/images/insta.png'; 
-import one from './assets/images/1.png'; 
-import two from './assets/images/2.png'; 
-import trans1 from './assets/images/trans1.png'; 
 import trans2 from './assets/images/trans2.png'; 
 import poster from './assets/images/poster.png'; 
 import WhitePaper from './assets/images/whitepaper.png'; 
@@ -20,10 +15,6 @@ import GBot1 from './assets/images/GBot1.png';
 import GBot2 from './assets/images/GBot2.png'; 
 import GBot3 from './assets/images/GBot3.png'; 
 import GBot4 from './assets/images/GBot4.png'; 
-import GBot5 from './assets/images/GBot5.png'; 
-import GBot6 from './assets/images/GBot6.png'; 
-import GBot7 from './assets/images/GBot7.png'; 
-import GBot8 from './assets/images/GBot8.png'; 
 
 
 // import $ from 'jquery'; 

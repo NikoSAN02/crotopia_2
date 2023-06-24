@@ -1,5 +1,3 @@
-import './styles/headerM.css';
-import './styles/modalM.css';
 
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";

@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import './styles/modal.css';
 
 import metamask from './assets/images/metamask.png';
 import defi from './assets/images/defi.png';

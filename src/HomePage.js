@@ -1,8 +1,5 @@
 import { Typography} from '@material-ui/core';
 import Button from "@material-ui/core/Button";
-import './styles/style.css';
-import './styles/newstyle.css';
-import './styles/gallery.css';
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "./redux/data/dataActions";
@@ -12,12 +9,6 @@ import { fetchData } from "./redux/data/dataActions";
 
 import diss from './assets/images/diss.png'; 
 import tweet from './assets/images/tweet.png'; 
-import insta from './assets/images/insta.png'; 
-import one from './assets/images/1.png'; 
-import two from './assets/images/2.png'; 
-import trans1 from './assets/images/trans1.png'; 
-import trans2 from './assets/images/trans2.png'; 
-import poster from './assets/images/poster.png'; 
 import WhitePaper from './assets/images/whitepaper.png'; 
 
 import background_cro_2 from "./assets/images/BG_Cro_2";
@@ -181,8 +172,8 @@ function HomePage() {
   return (
 
     <main style={{background: `url(${background_cro_2}) no-repeat center center fixed`, backgroundSize: 'cover', height: '100vh'}}>
-      <div style={{display: "flex", width: "454px", flexDirection: "column", marginTop: "40px"}}>
-        <Typography style={{ fontSize: "96px", fontFamily: "Outfit", fontWeight: "700", lineHeight: "100px"}}>CROtopia</Typography>
+      <div style={{display: "flex", width: "454px", flexDirection: "column"}}>
+        <Typography style={{ color: "#FFF", fontSize: "76px", fontFamily: "Outfit", fontWeight: "700", lineHeight: "100px"}}>CROtopia</Typography>
           
       </div>
 
@@ -190,7 +181,7 @@ function HomePage() {
 
      
 
-      {/* MINT Button 
+      {/* MINT Button  */}
 
       <div style={{ paddingLeft: "100px", paddingRight: "100px" }} className='mintstation' >
        
@@ -250,7 +241,7 @@ function HomePage() {
               </>
       )}
     </div>
- */}
+
 
 {/* Mint Button */}
 

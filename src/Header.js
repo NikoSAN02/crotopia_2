@@ -1,5 +1,3 @@
-import './styles/header.css';
-import './styles/modal.css';
 
 
 
@@ -129,11 +127,11 @@ function Header() {
 
         
 
-      <div >
-     <div className='header'>
+      <div style={{ background: "#000000", height: "60px", display: "flex", alignContent: "center", justifyContent:"space-between"}}>
+     
         <div>
             <a>
-                <span style={{ color: "#FFF", fontSize: "20px", fontFamily: "Outfit", fontWeight: "700", textTransform: "lowercase"}}>
+                <span style={{  marginLeft: "800px", color: "#FFF", fontSize: "20px", fontFamily: "Outfit", fontWeight: "700", textTransform: "lowercase"}}>
                     crotopia 2.0</span>
             </a>
         </div>
@@ -161,7 +159,6 @@ function Header() {
                 <span style={{ color: "#FFF", fontSize: "20px", fontFamily: "Outfit", fontWeight: "700", textTransform: "lowercase" }} class="title titlee" id="accountHolder">
                     CONNECT WALLET</span>
             </a>
-        </div>
       </div>
         
 
